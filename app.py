@@ -1,5 +1,6 @@
+from os import pardir
 from flask import Flask, render_template,request, redirect, url_for
-
+from model.main import predict
 
 app = Flask(__name__)
 
@@ -13,6 +14,7 @@ def submit():
         text = request.form['text_area']
         if text != "":
             print(text)
+            print(predict(text))
             return redirect(url_for('home'))
         else:
             print("please enter into text area")
