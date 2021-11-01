@@ -16,8 +16,8 @@ def submit():
     if request.method == 'POST':
         text = request.form['text_area']
         if text != "":
-            print(text)       
-            return render_template('home.html', text = text)
+            result = predict(text)       
+            return render_template('home.html', text = result)
         else:
             flash("Điền nội dung vào mới dự đoán được chứ ơ hay -.-")
             print("please enter into text area")

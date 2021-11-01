@@ -1,4 +1,3 @@
-from os import name
 import pickle
 testset2 = {'cmt': '''
         Chiến thắng ngược 3-2 của Lào trước Mông Cổ chiều 31/10 giúp Thái Lan giành suất vào vòng chung kết U23 châu Á 2022.
